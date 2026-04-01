@@ -8,3 +8,10 @@ java sceript মুল একটা ওয়েব সাইট কে জিব�
 */
 
 // console.log("hello js")
+
+// কেন HTML Code লেখের জন্য আমরা  document.write used kora hoy 
+//dociment.write(Hello js)
+
+// js কেন কিছু prit korar jnno console.log usd kori 
+console.log(5+5);
+//js code commend করার জন্য (single line commeand // এবং multi line commeand /* */ ) commeand হল কন লাইন যদি আমরা না দেখাতে চাই তাহলে commeant kore rakhi compile ke ingor kore boli thle commeint used kori 
