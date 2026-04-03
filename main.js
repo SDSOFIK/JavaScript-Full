@@ -17,6 +17,9 @@ console.log(5+5);
 //js code comment করার জন্য (single line comment // এবং multi line comment /* */ ) comment হল কন লাইন যদি আমরা না দেখাতে চাই তাহলে comment kore rakhi compile ke ingor kore boli thle commeint used kori 
 
 // =========variable =========
+
+
+
 /*  varible হল এমন বক্স যেখানে আমরা ডাটা জমা করে রাখে দেই যাতে করে পরে তা আমরা ব্যাবহার করতে পারি কন কিছু নামে এ veriable! js a veriable a 3 জিনিস দিয়ে তেরী করি ver let const  Exmple*/
 
 
@@ -35,18 +38,21 @@ console.log(name)
 /* 
 
 Variable নাম অবশ্যই letter, underscore (_) বা dollar ($) দিয়ে শুরু হতে হবে সংখ্যার দিয়ে শুরু করা যাবে না।
-Variable নামের মধ্যে কোনো space (ফাঁকা জায়গা) থাকা যাবে না
-👉 একাধিক শব্দ হলে একসাথে লিখতে হবে।
-Special character (যেমন @, #, %, & ইত্যাদি) ব্যবহার করা যাবে না
-👉 শুধু _ এবং $ ব্যবহার করা যায়।
+Variable নামের মধ্যে কোনো space (ফাঁকা জায়গা) থাকা যাবে না একাধিক শব্দ হলে একসাথে লিখতে হবে একাধিক শব্দ হলে প্রথম শব্দ ছোট, পরের শব্দ বড় অক্ষর দিয়ে শুরু হয় ।
+Special character (যেমন @, #, %, & ইত্যাদি) ব্যবহার করা যাবে না শুধু (_) এবং ($) ব্যবহার করা যায়।
 JavaScript এর reserved keyword (যেমন var, let, if, else) variable নাম হিসেবে ব্যবহার করা যাবে না
-👉 এগুলো language-এর নিজস্ব শব্দ।
 Variable name case-sensitive
-👉 বড় হাতের অক্ষর আর ছোট হাতের অক্ষর আলাদা হিসেবে গণ্য হয়।
+বড় হাতের অক্ষর আর ছোট হাতের অক্ষর আলাদা হিসেবে গণ্য হয়।
 Variable নাম এমন হওয়া উচিত যাতে বুঝা যায় এর মধ্যে কী data আছে
-👉 অর্থপূর্ণ নাম দেওয়া ভালো practice।
-JavaScript এ সাধারণত camelCase style ব্যবহার করা হয়
-👉 একাধিক শব্দ হলে প্রথম শব্দ ছোট, পরের শব্দ বড় অক্ষর দিয়ে শুরু হয়।
+অর্থপূর্ণ নাম দেওয়া ভালো practice।
+
 */
 const age = 25;
 console.log(age)
+
+//Primative Data Type হলো basic value এখানে কোনো object বা complex structure থাকে না। 
+
+
+
+//Non-primitive = object type data মানে এখানে data গুলো memory-তে reference (address) হিসেবে store হয়। 
+//exampe 
