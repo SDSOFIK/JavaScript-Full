@@ -72,7 +72,6 @@ let num_1 =1.55
  // string  সব সময় (""  or '') এর মাঝে লিখতে হয় Example 
  let myName = "SD Sofik"
 
-
  //boolean data  সুধু সত্য মিথা জাছাই করে অন্ন কিছু হয় না যেমন 
   let _isLongIn = true
   let _isNotLongIn = false
@@ -89,6 +88,47 @@ let num_1 =1.55
 //bigInt হল  এমন একটা  int জা অনেক নাম্বার হয় 
 const bigNum = 12345678901234567890n;
 
+
 //Non-primitive = object type data মানে এখানে data গুলো memory-তে reference (address) হিসেবে store হয়। 
 //exampe 
 
+
+let name2 = 'sofik';
+let year = 2026;
+//Non-primitive = object type data মানে এখানে data গুলো memory-তে reference (address) হিসেবে store হয়। Non-primitive data type এর মধ্যে  object, array, function, date ইত্যাদি আছে 
+//exampe 
+
+//object  একটি object হল এমন একটা data type যা key value pair হিসেবে data store করে থাকে Example
+
+//student হল object name  name, age, class হল key এবং "sofik", 25, "BSc in CSE" হল value
+
+let Student ={
+  name : "sofik",
+  age : 25,
+  class : "BSc in CSE"
+}
+//object এর value print করার জন্য Student.name and age or class আর যদি আমরা Full object Print করতে চাই তাহলে student dile hbe 
+console.log(Student.name)
+console.log(Student.age)
+console.log(Student.class)
+console.log(Student)
+
+
+// Array হল এমন একটা data type যা একাধিক value কে একটি variable এর মধ্যে store করে থাকে Array এর মধ্যে value গুলো index (0, 1, 2) হিসেবে store হয় index 0 থেকে শুরু হয়। Example
+
+
+// Array [] এর মধে লিখতে হয় এবং একটা পর , দিয়ে পরে value লিখেতে হয় আর print করার জন্য index number ধরে print kore hoy 
+let food = ["Apple" , "Orange ", "Banana","etc"]
+
+console.log(food[0]);
+
+
+
+// সব Array Print করার জন্য Loop used করতে হয় ওইটা আমরা পরে দেখব
+
+//Function হল এমন একটা block of code যা একটি নির্দিষ্ট কাজ সম্পাদন করে থাকে Function এর মধ্যে code লিখে আমরা পরে সেই code কে বার বার ব্যবহার করতে  Example
+function person(){
+  console.log("Hello function")
+}
+//function call করার জন্য functionname()  লিখতে হয় তাহলে function এর ভিতরে যা যা আছে তা print হবে
+person()
