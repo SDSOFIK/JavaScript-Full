@@ -132,3 +132,95 @@ function person(){
 }
 //function call করার জন্য functionname()  লিখতে হয় তাহলে function এর ভিতরে যা যা আছে তা print হবে
 person()
+
+
+
+
+//=========================Operators========================
+
+//Operator হল এমন একটা symbol যা variable বা value এর উপর কিছু operation করে থাকে যেমন + - * / %  ইত্যাদি যেমন arithmetic operator, assignment operator, comparison operator, logical operator unary and ternary Operator ইত্যাদি আছে
+
+
+//==================================arithmetic operator==================================
+//Arithmetic operator হল এমন একটা operator যা দুইটা বা তার বেশি value এর উপর গাণিতিক operation করে থাকে যেমন + - * / % ইত্যাদি
+let a = 10
+let b = 5 
+console.log(a+b) // যোগ
+console.log(a-b) // বিয়োগ
+console.log(a*b) // গুন
+console.log(a/b) // ভাগ
+console.log(a%b) // ভাগ শেষ
+
+
+//================================= assignment Operator ===========================================
+
+// Assignment Operator হল  ভেরিয়েবলে মান সংরক্ষণ করার জন্য ব্যবহৃত Symbole = , +=,  -= , *= , /=, %=
+// =  হল কোনো verible মান নেওয়া  যেমন 
+let Assignment = 5;
+// +=,  -= , *= , /=, %= এই হল আগের যে ভেলু আছে  ওইটা সাথে ২য় টা ভেলু যোগ করা , বিয়োগ করা , গুন করা , ভাগ করা , ভাগশেষ  করা যেমন
+
+Assignment += 5; 
+console.log(Assignment);
+Assignment -= 2; 
+console.log(Assignment);
+Assignment *= 3;    
+console.log(Assignment);
+Assignment /= 4;    
+console.log(Assignment);
+Assignment %= 3;    
+console.log(Assignment);  
+
+//============================== comparison Operator =========================================
+
+//Comparison Operator হল এমন একটা operator যা দুইটা value এর মধ্যে তুলনা করে থাকে এবং ফলাফল হিসেবে true বা false return করে থাকে যেমন ==, ===, !=, !==, >, <, >=, <= ইত্যাদি
+let cx = 10;
+let cy = 5;  
+//== হল দুইটা value সমান কিনা তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx == cy); 
+
+//=== হল দুইটা value সমান এবং type সমান কিনা তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx === cy);
+//!= হল দুইটা value সমান না কিনা তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx != cy);  
+//!== হল দুইটা value সমান না এবং type সমান না কিনা তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx !== cy);
+//> হল দুইটা value এর মধ্যে কোনটা বড় তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx > cy);
+//< হল দুইটা value এর মধ্যে কোনটা ছোট তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx < cy);
+//>= হল দুইটা value এর মধ্যে কোনটা বড় বা সমান তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx >= cy);  
+//<= হল দুইটা value এর মধ্যে কোনটা ছোট বা সমান তা চেক করে যদি সতি হয় তাহলে true return করে না হলে false return করে
+console.log(cx <= cy);
+//============================== logical Operator =========================================
+
+
+//Logical Operator হল এমন একটা operator যা দুইটা বা তার বেশি condition এর উপর logical operation করে থাকে এবং ফলাফল হিসেবে true বা false return করে থাকে যেমন &&, ||, !   
+let ox = 10;
+let oy = 5;
+
+//&& হল দুইটা condition এর মধ্যে সব condition true হলে true return করে না হলে false return করে
+console.log(ox > 5 && oy < 10);
+//|| হল দুইটা condition এর মধ্যে কোন একটা condition true হলে true return করে না হলে false return করে
+console.log(ox > 5 || oy < 3);
+//! হল condition এর logical negation করে থাকে অর্থাৎ condition true হলে false return করে এবং condition false হলে true return করে
+console.log(!(ox > 5));
+
+//==================== unary and Ternary opetor =====================
+
+// unary operator হল এমন এক operator যা শুধুমাত্র একটি মাত্র  operand উপের কাজ করে ++, --
+// ++ হল কন value মান ১ ১ করে বারবে -- হল value মান ১ ১ করে কমবে  Exmaple 
+
+let ux =10
+ux++;
+
+console.log(ux)
+ux--
+console.log(ux)
+
+// Teranry operator হল এমন এক operator যা এক লাইন condition চেক করে এবং সত্যি মিথা retun  করে Example 
+
+let tx =5;
+
+let tx1 =(tx >= 18)? "adult":"not adult";
+console.log(tx1)
