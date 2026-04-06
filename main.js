@@ -224,3 +224,19 @@ let tx =5;
 
 let tx1 =(tx >= 18)? "adult":"not adult";
 console.log(tx1)
+
+//============ if eles Condition ===========
+// if eles হল যদি কন সর্ত সত্যি হয় তাহলে একটা কাজ হবে আর যদি মিথা হয় তাহলে একটা কাজ হবে যেমন মনে করি ট্রাফিক লাইট যদি লাল জলে থলে stop যদি লিল জলে তআহলে run exmple code 
+
+// if দিয়ে (১ সর্ত){sotti hole print korbe } যদি অনেক গুলা সর্ত থাকে থলে  eles if (more Codition){sotti hole Pirnt hobe} eles {upore gula sotti na hole }
+let terifficeLite ="Rad";
+
+if ( terifficeLite == "Rad"){
+console.log("Stop")
+}
+else if(terifficeLite == "gren" ){
+  console.log("Run")
+}
+else{
+  console.log("Another way ")
+}
