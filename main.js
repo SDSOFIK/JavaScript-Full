@@ -272,3 +272,27 @@ switch (day){
       console.log("Invild Day ")
     break;
 }
+// ==================== for Loop ====================
+// for loop হল এমন একটা loop যা একটি নির্দিষ্ট সংখ্যক বার code block কে execute করে থাকে for loop এর মধ্যে ৩টা অংশ থাকে ১. initialization (যেখানে আমরা loop variable কে initialize করি) ২. condition (যেখানে আমরা loop চলার condition দেই) ৩. increment/decrement (যেখানে আমরা loop variable কে update করি) Example
+
+//let i =0 থেকে সুরু হবে i<5 মানে i মান ৫ এর কম হবে ততখন loop চলবে এবং i++ মানে i মান ১ ১ করে বারবে
+for (let i = 0; i < 5; i++){
+  console.log(i, "Hello for loop");
+}
+
+// brack foop হল এমন একটা loop যা একটি নির্দিষ্ট condition এর উপর loop টাকে stop করে দেয় যেমন আমরা যদি বলিই if i== 5 মানে i এর মান ৫ হলে lopp ta আর চলবে না তাহলে আমরা break used করি Example
+
+for (let i = 0; i < 10; i++){
+  console.log(i)
+  if (i == 5){
+    break; // loop stop হবে যখন i এর মান ৫ হবে
+  }
+}
+// continue loop হল এমন একটা loop যা একটি নির্দিষ্ট condition এর উপর loop টাকে skip করে দেয় যেমন আমরা যদি বলিই if i== 5 মানে i এর মান ৫ হলে 5 টা বাদ দিয়ে পরে লাইন চলে যাবে তাহলে আমরা continue used করি Example
+
+for (let i = 0; i < 10; i++){ 
+  if (i == 5){
+    continue; // loop skip হবে যখন i এর মান ৫ হবে
+  }
+  console.log(i);
+}
