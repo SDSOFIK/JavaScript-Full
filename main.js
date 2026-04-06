@@ -240,3 +240,35 @@ else if(terifficeLite == "gren" ){
 else{
   console.log("Another way ")
 }
+// ==================== switch case condition ==================
+// switch case condition হল যদি অনেক গুলা সর্ত থাকে তাহলে আমরা switch case condition ব্যাবহার করতে পারি যেমন উপরে if else condition a অনেক গুলা সর্ত ছিল তাই আমরা switch case condition ব্যাবহার করতে পারি Example
+
+let day = 1;
+
+// Switch (যেইটা চেক করতে চাই) {case check করবে যদি সতি হয় Print করবে করে brack kore dibe যদি সত্যি না হয় পরে case a যাবে যদি কন সত্যি না  default গিয়ে ja ace Print করে দিবে সব case এর পরে brack uesd করতে হবে না হলে চলতেই থাকবে stop হবে না   }
+switch (day){
+  case 1:
+    console.log("Sunday")
+    break;
+  case 2:
+    console.log("Monday") 
+    break;
+  case 3:
+    console.log("Tuesday")  
+    break;  
+  case 4:
+    console.log("Wednesday")  
+    break;  
+  case 5:
+    console.log("Thursday")  
+    break;
+  case 6:   
+    console.log("Friday")  
+    break;
+  case 7:
+    console.log("Saturday")  
+    break;
+    default:
+      console.log("Invild Day ")
+    break;
+}
