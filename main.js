@@ -366,24 +366,62 @@ console.log(add2(7 , 8))
 let student = {
   name : "sofik",
   age : 25,
-  class : "BSc in CSE"
-   sub: function(){
-console.log()
+  class : "BSc in CSE",
+   addition: (num1, num2) => {
+  return num1 + num2 ;
   }
-}
+};
+
 
 
 //যদি সদু student দিয়ে তাহলে সব print korbe 
-console.log(student)
+// console.log(student)
 // এই ভাবে ডট . দিয়ে আলাদা আলাদা করে portapy dore print kora jay 
 console.log(student.name)
 console.log(student.age)
 console.log(student.class)
 
+
 // আমরা যদি নতুন কিছু add করতে চাই তাহলে 
 student.mobile = 1315116027
 console.log(student)
 
-// আবার যদি DELET  করতে চাই তাহলে 
+// // আবার যদি DELET  করতে চাই তাহলে 
 delete student.age
-console.log(student)
+console.log(student);
+// object এর ভিতরে function a used করা যায়
+console.log(student.addition(10 , 10)) 
+
+//====================array====================
+// array হল এমন একটা data type যা একাধিক value কে একটি variable এর মধ্যে store করে থাকে Array এর মধ্যে value গুলো index (0, 1, 2) হিসেবে store হয় index 0 থেকে শুরু হয়। Example
+// Array [] এর মধে লিখতে হয় এবং একটা পর , দিয়ে পরে value লিখেতে হয় আর print করার জন্য index number ধরে print kore hoy 
+let boks = ["Bangla" , "English ", "Math"];
+
+// array শেষ এ যদি কন values add করতে চাই তাহলে  push দিয়ে করতে হয়  example 
+boks.push("physics");
+
+// array শেষ এ যদি কন values deletes করতে চাই থলে pop দিয়ে করতে হয় যেমন 
+boks.pop()
+
+// array সামনে যদি কন values add করতে চাই তহলে unshift 
+
+boks.unshift("java");
+
+// array সামনে যদি কন values deletes  করতে চাই তহলে shift
+boks.shift()
+// arrey যে কন value এর index number change করতে চাই তাহলে splice used করতে হয় যেমন 0 index a physics add করতে চাই thle 0 index a physics add hbe and baki gula 1,2,3 index a chole jabe
+
+// 1 number index এর পরে add হবে ০ দেওয়া হইছে ১ এর পর ০ numver index a যোগ হবে 
+boks.splice(1, 0, "c++");
+// আবার যদি delete kore cai thle ses er valu ta dibo na thle oi indes ta delete hoye jabe 
+
+console.log(boks);
+
+// আমরা যদি সব array একটা করে প্রিন্ট করতে চাই তাহলে for loop used করতে পারি যেমন
+for (let i = 0; i < boks.length; i++){
+  console.log(boks[i])
+}
+// অথবা js resarves key word ForEach used করতে পারি যেমন
+boks.forEach((arr) =>{
+  console.log(arr);
+})
