@@ -425,3 +425,33 @@ for (let i = 0; i < boks.length; i++){
 boks.forEach((arr) =>{
   console.log(arr);
 })
+
+
+//====================for in loop====================
+// for in loop হল এমন একটা loop যা object এর key গুলোকে iterate করে থাকে Example 
+let person1 = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+for (let key in person1) {
+  //key যদি দেখতে চাই তাহলে key লিখলেই হবে যেমন 
+  console.log(key);
+  // আর যদি সুদু value দেখতে চাই তাহলে onject name [key]
+  console.log(person1[key]);
+  //যদি সব কিছু এক সাথে দেখতে চাই তাহলে 
+  console.log(key + ": " + person1[key]);
+}
+
+//================================ for of loop =====================================
+// for of loop হইলো array ba string ba je kno একটা একটা করে ভাগ করে আলাদা লাইন করে দেয় for of loop সব থাকে বেশি used হয় array te Example 
+// array 
+let arr = ["sofik" , "shakib", "Radhesh"];
+
+//string 
+arr = "Soffik";
+
+for (const arrs of arr){
+  console.log(arrs);
+}
