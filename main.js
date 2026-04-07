@@ -297,6 +297,12 @@ for (let i = 0; i < 10; i++){
   console.log(i);
 }
 
+//7 এর নামতা প্রিন্ট করার জন্য for loop used করা হয়েছে Example
+for (let k=1; k<=10; k++){
+  console.log(`${7} * ${k} = ${7*k}`)
+}
+
+
 // ==================== while loop ====================
 // while loop হল আগে codition চেক করে তারপর lopp চলে যদি সর্ত সত্যি হয় তাহলে এবং যা print করতে চাব করে তারপর ইনক্রিমেন্ট বা ডিক্রিমেন্ট হয় Example
 
@@ -312,4 +318,32 @@ do {
   console.log(k, "Hello do while loop");
   k++; // k মান ১ ১ করে বারবে
 } while (k < 5);
-  
+
+//=====================function=====================
+// function হল এমন একটা box বা tempelet যেখানে আমরা code সাজি রাখি এবং পরে ইচ্ছা মত used kore পারি Function এর মধ্যে code লিখে আমরা পরে সেই code কে বার বার ব্যবহার করতেস Example
+
+function person (){
+  name = "sofik"
+  console.log(name)
+}
+
+person() // function call করার জন্য function name() লিখতে হয় তাহলে function এর ভিতরে যা যা আছে তা print হবে
+
+//======================================= function parameter  ====================
+// function parameter হল function এর ভিতরে যে variable declare করা হয় তাকে parameter বলে এবং argument হল function call করার সময় যে value pass করা হয় তাকে argument বলে Example  
+
+
+// num1 and num2 হল parameter যেখন কন নাম্বার বা নাম দিব তখন  যেত গুলা varible নিব ত্তগুলা parameter পাস করব 
+function add(num1, num2){
+  console.log(num1 + num2)
+}
+// argumanet হল যেই parameter গুলা আমরা পাস করচি তার value দিবো সেইটা যে কন হইতে পারে থলে তার results দিবে ai add Function  ta আমরা যে কন জায়গায় uesd করতে পারব 
+add(5, 8)
+// ==================== function return value ==================
+// function return value হল function এর ভিতরে যে value calculate করা হয় তাকে return করে থাকে যাতে করে পরে আমরা সেই value কে used করতে পারি Example 
+function add(num1, num2){
+  return num1 + num2; // function এর ভিতরে যে value calculate করা হয় তাকে return করে থাকে যাতে করে পরে আমরা সেই value কে used করতে পারি
+} 
+
+let result = add(5, 8); // function call করার সময় যে value pass করা হয় তাকে argument বলে Example  add(5, 8) এইটা argument এবং add function এর ভিতরে num1 and num2 হল parameter
+console.log(result) // function return value হল function এর ভিতরে যে value calculate করা হয় তাকে return করে থাকে যাতে করে পরে আমরা সেই value কে used করতে পারি Example  add(5, 8) এইটা argument এবং add function এর ভিতরে num1 and num2 হল parameter
