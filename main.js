@@ -347,3 +347,43 @@ function add(num1, num2){
 
 let result = add(5, 8); // function call করার সময় যে value pass করা হয় তাকে argument বলে Example  add(5, 8) এইটা argument এবং add function এর ভিতরে num1 and num2 হল parameter
 console.log(result) // function return value হল function এর ভিতরে যে value calculate করা হয় তাকে return করে থাকে যাতে করে পরে আমরা সেই value কে used করতে পারি Example  add(5, 8) এইটা argument এবং add function এর ভিতরে num1 and num2 হল parameter
+
+
+//==================== arrow function ==================
+// arrow function হল এমন একটা function যা ES6 এ introduce করা হয় arrow function এর syntax অনেকটা compact হয় এবং this keyword কে lexical scope এ bind করে থাকে Example 
+// function add(num1, num2){
+//   return num1 + num2;
+// }  
+// arrow function এ আমরা function keyword এর জায়গায় => এইটা ব্যবহার করি এবং যদি function এর ভিতরে শুধু একটা parameter থাকে তাহলে parameter কে () দিয়ে ঘিরে দিতে হয় না Example
+const add2 = (num1, num2) => {
+  return num1 + num2;
+}
+console.log(add2(7 , 8))
+
+//====================object====================
+// object হল এমন একটা data type যা key value pair হিসেবে data store করে থাকে Object এর মধ্যে key এবং value থাকে এবং key এর মাধ্যমে value কে access করা হয় Example 
+// student হল object name  name, age, class হল key এবং "sofik", 25, "BSc in CSE" হল value   object এ ভিতরে  fuction a used করা যায় 
+let student = {
+  name : "sofik",
+  age : 25,
+  class : "BSc in CSE"
+   sub: function(){
+console.log()
+  }
+}
+
+
+//যদি সদু student দিয়ে তাহলে সব print korbe 
+console.log(student)
+// এই ভাবে ডট . দিয়ে আলাদা আলাদা করে portapy dore print kora jay 
+console.log(student.name)
+console.log(student.age)
+console.log(student.class)
+
+// আমরা যদি নতুন কিছু add করতে চাই তাহলে 
+student.mobile = 1315116027
+console.log(student)
+
+// আবার যদি DELET  করতে চাই তাহলে 
+delete student.age
+console.log(student)
