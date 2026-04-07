@@ -296,3 +296,20 @@ for (let i = 0; i < 10; i++){
   }
   console.log(i);
 }
+
+// ==================== while loop ====================
+// while loop হল আগে codition চেক করে তারপর lopp চলে যদি সর্ত সত্যি হয় তাহলে এবং যা print করতে চাব করে তারপর ইনক্রিমেন্ট বা ডিক্রিমেন্ট হয় Example
+
+let j = 0;  
+while (j < 5){
+  console.log(j, "Hello while loop");
+  j++; // j মান ১ ১ করে বারবে
+}
+// do while loop হল আগে code block কে execute করে তারপর condition চেক করে যদি সর্ত সত্যি হয় তাহলে আবার code block কে execute করে থাকে Example
+
+let k = 0;
+do {
+  console.log(k, "Hello do while loop");
+  k++; // k মান ১ ১ করে বারবে
+} while (k < 5);
+  
