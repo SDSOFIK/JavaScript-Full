@@ -478,4 +478,75 @@ console.log(arr1 , arr2, arr3);
 
 // array every () method হইল কন একটা সর্ত সাপখে true and fales return korbe মনে করি আমদের এ
 
-arr.every
+// every te akta array Function cali niye condittion diye dei jodi sotti hoy true and mitha hole fales print kore 
+
+let result1 = arr3.every(num => num > 0);
+console.log(result1);
+
+// array filter () mathod হল array মধে যদি আমরা কন কিছু খুজতে চাই তাহলে  filter method diye kori যেমন 
+
+// ধরি আমা চাই ai Array মধে যেই নাম্বার গুলা ৫ এর বড় বা সমান সেই গুলা arro function diye codition dibo  callBack Function ba perametr name amra je kno dite parbi যে কন সর্ত দিতে পারি 
+let result2 = arr3.filter(num => num >=5 )
+console.log(result2)
+// array find () method হল যে কন একটা value find করে আমরা codition দিয়ে দিতে পারি আমরা যদি বলি যে ৫ এর পর যেটা আছে সেই টা দেখাও মনে রাখে হবে আমরা সর্তে যে দিবে তার পরে ভালু টা দিবে এইখানে ১ পর ২ এমন না চল দেখি আমরা যদি আমরা সমান নাম্বার দেখতে চাই তাহলে === দিতে হবে ।
+let arr4 = [1,5,6]
+let result4 = arr4.find(num1 => num1 ===5);
+console.log(result4)
+// findindex () method সেম find er মতি শুধু value  না দিয়ে  index নাম্বার দেয় চল দেখি 
+
+let result5 = arr4.findIndex(num => num ===5);
+console.log(result5)
+
+// array from() method হল কোনো string কে array তে convert করে চল দেখি 
+let arr5 = "sofik"
+let result6 = Array.from(arr5);
+console.log(result6)
+//  আমরা চাইলে একটা করে ওয়ার্ড  ও প্রিন্ট করতে পারি 
+console.log(result6[2]);
+
+// Array join() method হল সব গুলা array কে এক সাথে যোগ করে string a convert করে চল দেখি 
+let arr6 = ["sofik" , "islam" ]
+// আমরা যদি সব array মাঝখানে ফাকা বা কোন কিছু রাখতে চাই সেইটা দিতে হবে 
+let result7 = arr6.join(" ");
+console.log(result7);
+
+// array includes() method হল  array মাঝে যে কোনো array তাহলে ture and false দেখায় চল দেখি
+
+let result8 = arr6.includes("sofik");
+console.log(result8);
+
+// array lastIndexOf () Method হল array index number দেয় যদি same array হয় তাহলে শেষ এর array index ননাম্বার দিবে । 
+let arr7 = [4, 5, 6,7]
+let result9 =arr7.lastIndexOf(7);
+console.log(result9)
+
+// array reverse() method হলে পুরা array টাকে ঘুরায় দেয় মানে সামনের array পিছনে  এবং পিছনের array টা সামনে 
+arr7.reverse
+console.log(arr7);
+
+// array sliec() method হল নিদিষ্ট কোন array যদি রাখতে চাই এবং বাকি array গুলা বাদ দিতে চাই তাহলে এই মেথড used করি এই মেথড কিন্তু নতুন array decceler kore age array change hoye na চল দেখি 
+
+let schooleName = ["sobuj B.L High School", "Sofik Primery School" , "ssc","Shakib BKSP High School"] // এই খানে থাকে আমি সফিক স্কুল এবং sobuj BL School রাখতে চাই 
+
+// এইকে দিতে হবে যে কোন array থাকে কোন array প্রজান্ত থাকবে সুরু অ্যান্ড শেষ index number 
+let UpdateSchool = schooleName.slice(0,2);
+
+console.log(UpdateSchool);
+
+// Array some method হল যে জন সর্ত সতি হলে ture and false return kore 
+
+let undefinedNumber = [4, 5, 6];
+let defiendNumber = undefinedNumber.some((num) => num <10);
+console.log(defiendNumber);
+
+// arry sort () method হল সারি করে সাজিয়ে দেওয়া মানে a b c এমন করে সাজিয়ে দেওয়া 
+
+let undefinedName = ["a", "h", "c", "b"];
+let DefiendName = undefinedName.sort()
+console.log(DefiendName);
+
+// কিন্তু নাম্বার যদি হয় তাহলে এমন করে হয় না চলে দেখি কেমন  করে হয় 
+let numbers = [8, 6, 8, 0, 7, 1];
+// যদি আমরা ছোট থেকে বড় তাহলে a -b jodi bro thle coto chai thole b-a dibo
+let number = numbers.sort((a ,b) => a-b )
+console.log(number)
