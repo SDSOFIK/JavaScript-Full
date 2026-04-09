@@ -455,3 +455,27 @@ arr = "Soffik";
 for (const arrs of arr){
   console.log(arrs);
 }
+
+
+//========================Array Method ===================================
+// array method হল js এর কিছু build করা কিছু function আছে যা দিয়ে array অনেক operation করা যায় 
+
+//================= array at()
+// array at() হল একটা array মধে অনেক মান থাকে সেই  index number দরে ভালু print kore যেমন 
+
+let arra = [2, 3,4,5,6,7,8,9,];
+
+console.log(arra.at(4)); // 4 no index er valu ta print kore valu 6
+
+
+// Array concat() method হল ২ টা array কে এক সঙ্গে যোগ করা ২ টা array কে একটা array যোগ করে ৩ নাম্বার array add করে ২ টা array valu ১ টা array যোগ হবে Example
+let arr1 = [2,3,4];
+let arr2 = [5,6,7];
+
+// array 3 ভালু হলিও array 1 2 er valu  arr1 and 2 ওদের মানো থাকে যায় ঠিক থাকে পরিবতন হয় না ।
+let arr3 = arr1.concat(arr2);
+console.log(arr1 , arr2, arr3);
+
+// array every () method হইল কন একটা সর্ত সাপখে true and fales return korbe মনে করি আমদের এ
+
+arr.every
