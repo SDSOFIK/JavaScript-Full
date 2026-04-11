@@ -550,3 +550,65 @@ let numbers = [8, 6, 8, 0, 7, 1];
 // যদি আমরা ছোট থেকে বড় তাহলে a -b jodi bro thle coto chai thole b-a dibo
 let number = numbers.sort((a ,b) => a-b )
 console.log(number)
+
+
+// ===================== String Method ====================
+/*String method হল string কিছু operation চালেনর জন্য js er buli in function যা দিয়ে string a অনেক অপারেশান চালান যায় */
+
+// length method হল এই মেথড দিয়ে একটা string a কয়টি characther আছে তা দেখায় 
+let counry  = "Hello Bangladesh"
+
+// veriable নাম সাথে .langth দিলে কয় টি character আছে তা দেখাবে 
+console.log(counry.length);
+
+// toUpperCase() মেথড হল যেত string থাকবে সব Capital Later হয়ে যাবে 
+
+console.log(counry.toUpperCase());
+
+// toLowerCase() method হল oi String a  যেত string আছে সব small later hoye jabe 
+console.log(counry.toLowerCase());
+// includes() method হল যে কোনো word বা কোন string ওই varibale আছে কি না তা চেক করে যদি থাকে তাহলে true যদি না থাকে তাহলে false return করে মনে রাখতে হবে এইটা কিন্তু case canctive 
+
+console.log(counry.includes("Hello"));
+
+// indexOf() method হল যে ওয়ার্ড টা দিব ওইটা কত নাম্বার index থেকে সুরু হইচে সেইতে দেখাবে 
+
+console.log(counry.indexOf("Bangladesh"));
+
+// slice() method হল একটা veriable থেকে যে অংশ আমরা নিতে চাই সুধু বাকি টা বাদ দিবে parameter dite hbe index numer start and end যেখানে থেকে যেই প্রজান্ত নিতে চাই ওই index নাম্বার 
+console.log(counry.slice(0, 5));
+
+// replace() method হল যদি কন ওয়ার্ড আমরা পরিবন করতে চাই তাহলে সেই পরিবতন করে নতুন ওয়ার্ড দেই  মনে রাখতে হবে সুদু কিন্তু ১ম  এ যেই টার সাথে মিল পাবে ওইটা সুধু পরিবত করবে যদি আমরা সব গুলা পরিবতন করতে চাই তলে replaceAll() method uesd করতে হবে হলে যে গুলা সাথে মিল পাবে সব গুলা পরিবতন করে দিবে 
+
+// parameter দিব প্রথম টা যেটাকে পরিবতন করতে চাই ২য় টা দিব পরিবতন করে যেইটা দিতে চাই 
+
+
+let updateCountry = counry.replace("Hello", "My Country");
+let updateCountry1 = counry.replaceAll("Hello", "My Country");
+console.log(updateCountry);
+console.log(updateCountry1);
+
+// trim () method এর কাজ হল কন string এর সামনে বা পছনে ফাকা স্পেস থাকলে টা ডিলিট করে দেয় 
+let specWord = " Sofik ";
+console.log(specWord.trim());
+
+// split() এর কাজ হল string কে Array te convert করা 
+
+let StudentName = "Sofik  rofik  jobber  borkot";
+console.log(StudentName.split(","));
+
+// chartAt() method  এর কাজ হল string এর index number দিলে string er value  দেখায় 
+
+//Pramater pas korbo কত নাম্বার index er ভালু দেখতে চাই 
+console.log(StudentName.charAt(3));
+// concat() method এই কাজ হল ২ টা string কে এক যায় করা 
+// যেই টা সামনে দিবো পরে 1ম.concat(2য় String)
+let towStrigAdd = specWord.concat(StudentName);
+console.log(towStrigAdd.trim());
+
+//startsWith() মেথড এর কাজ হল কন string er সামনে ওই ওয়ার্ড টা আছে কি না তা চেক করে যদি থাকে তাহলে ture na hole false return kore 
+
+console.log(towStrigAdd.startsWith(" sofik"));
+
+//endsWith() seme এইটা সুধু শেষ টা চেক করে 
+console.log(towStrigAdd.endsWith("borkot"));
