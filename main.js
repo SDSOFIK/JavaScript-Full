@@ -601,8 +601,8 @@ console.log(StudentName.split(","));
 
 //Pramater pas korbo কত নাম্বার index er ভালু দেখতে চাই 
 console.log(StudentName.charAt(3));
-// concat() method এই কাজ হল ২ টা string কে এক যায় করা 
-// যেই টা সামনে দিবো পরে 1ম.concat(2য় String)
+// concat() method এই কাজ হল ২ টা string কে এক যায় করা  trimStrat trimEnd trimRight TrimLeftএই গুলা দিক দেখে সেই দেখ এর ফাকা ডিলিট করে 
+// যেই টা সামনে দিবো পরে 1ম.concat(2য় String)  
 let towStrigAdd = specWord.concat(StudentName);
 console.log(towStrigAdd.trim());
 
@@ -612,3 +612,38 @@ console.log(towStrigAdd.startsWith(" sofik"));
 
 //endsWith() seme এইটা সুধু শেষ টা চেক করে 
 console.log(towStrigAdd.endsWith("borkot"));
+
+
+// js Date Object  হলি buil-in object যে time date live time addres kore চল দেখি কি কি আছে 
+
+// js এর buil in Function টার objecct Create করে নেই  এই গুলা সব লাইভ টাইম 
+let now =new Date();
+
+// full time চলে আসেবে date time year month 
+console.log(now)
+// যদি দিন বের করতে চাই দিন সুরু হয় ০ থেকে week day
+console.log(now.getDay())
+
+// যদি মাস বের করতে চাই তাহলে 
+console.log("দিন " + now.getMonth());
+
+// যদি বছর বের করতে চাই তাহলে 
+
+console.log("বছর " + now.getFullYear());
+
+// যদি ঘণ্টা বের করতে চাই তাহলে 
+console.log("ঘণ্টা " +now.getHours());
+
+// যদি মিনিট বের করতে চাই তাহলে 
+console.log("মিনিট " +now.getMinutes());
+// যদি সেকেন্ট বের করতে চাই তাহলে 
+console.log("সেকেন্ট " +now.getSeconds());
+
+// লোকাল টাইম zone  বানার জন্য 
+// date 
+let BDTime = now.toLocaleDateString("en-BD");
+console.log(BDTime);
+
+// time 
+BDTime = now.toLocaleTimeString("en-BD");
+console.log(BDTime)
