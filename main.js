@@ -647,3 +647,64 @@ console.log(BDTime);
 // time 
 BDTime = now.toLocaleTimeString("en-BD");
 console.log(BDTime)
+
+
+
+// ============ JavaScript Math Object ================
+
+//Math object হলো JavaScript-এর একটি built-in object যেটা দিয়ে বিভিন্ন ধরনের গাণিতিক কাজ করা যায়।
+
+
+// Math.PI হলো PI এর মান বের করা 
+let pi = Math.PI
+console.log(pi); 
+let e = Math.E
+console.log(e);
+
+// math.round এর কাজ হল যদি কন দশমিক সংখ্যা থাকে সেইটা পূর্ণ সংখ্যা করে দেয় যদি .5 থেকে বড় হয় তাহলে পূর্ণ সংখ্যা দিবে যদি ৪ থেকে কম হয়ে তাহলে সেই সংখ্যা পূর্ণ সংখ্যা দিবে ।
+let FullInt = 5.8;
+
+console.log(Math.round(FullInt)) ;
+
+//  math.ceil এর কাজ হল যদি দশমিক যুক্ত কন সংখ্যা থাকে তাহলে তাহলে ওই দশমিক পরে পূর্ণ সংখ্যা দেয় 
+let nextInt = 4.2;
+console.log(Math.ceil(nextInt));
+
+  // Math floor and math trunc এর কাজ হল দশমিক কন নাম্বার নেয় না দশমিক এর পরে টা বাদ দিয়ে সদু পূর্ণ মান টা নেয়
+  console.log(Math.floor(nextInt)); 
+  console.log(Math.trunc(nextInt)); 
+
+  // math Power যদি কন নাম্বারে আমরা পাওয়া দিতে চাই তাহলে আমরা এই অব্জেট used korbo 
+  // prameter 1st vamue 2nd power koto hbe 
+
+  console.log(Math.pow(4, 2));
+
+  //Math.sqrt() এর কাজ হল Root করে দেয় 
+console.log(Math.sqrt(16));
+
+// Math.abs() এর কাজ হল কন নেগিটিভে  নাম্বার থাকলে positive নাম্বার করে দিবে 
+
+console.log(Math.abs(-66));
+
+// math.max() এর কাজ হল সব থেকে বড় নাম্বার টা খুজে বের করবে 
+
+
+console.log(Math.max(4, 5, 6, 7, 8));
+// math.min() এর কাজ হল সব থাকে ছোট নাম্বার বের করা 
+
+console.log(Math.min(4, 5, 6, 7, 8));
+
+//Math.random() আমরা যদি কন rendom নাম্বার print করতে চাই বা rendom নাম্বার চাই তাহলে এইটা used kori 
+
+
+// 0 to 1 number print korbe 
+console.log(Math.random());
+
+// 1 to 10 nuber print er jnno 
+console.log(Math.floor(Math.random()*10)+1);
+// 10 to 100 print korbe 
+
+console.log(Math.floor(Math.random()*100)+1)
+// 100 to 999 print korbe 
+
+console.log(Math.floor(Math.random()*1000)+1)
