@@ -708,3 +708,21 @@ console.log(Math.floor(Math.random()*100)+1)
 // 100 to 999 print korbe 
 
 console.log(Math.floor(Math.random()*1000)+1)
+
+
+// =====================JS Number Convert ========================
+
+// toFixed এর কাজ হল দশমিক এর পর কয় টা সংখ্যা রাখেতে চাই সেই টা  
+
+let underNumber = 4.8888;
+console.log(underNumber.toFixed(1));
+
+// toLocalStrin হল যে যেই সংখ্যা আছে সেইটা আমরা কোন ভাসায় দেখেতে চাই মানে কোন দেশ এর 
+
+let globalLangague = 1222222222222222222
+console.log(globalLangague.toLocaleString("bn-BD"));
+
+// toString হল আমরা যদি কোন নাম্বার কে string a convert করতে চাই 
+
+
+console.log(globalLangague.toString());
