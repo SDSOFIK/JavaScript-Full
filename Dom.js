@@ -33,3 +33,34 @@ let id_Select = document.querySelector("#idName")
 let Class_Select = document.querySelector(".ClasName")
 // যদি আমরা Tag ধরতে চাই তাহলে আমরা কোন কিছু দিব না 
 let tag_Select = document.querySelector("TagName")
+
+
+//JavaScript-এ textContent আর innerText—দুটাই HTML element-এর ভিতরের লেখা পরিবর্তন বা নেওয়ার জন্য ব্যবহার হয়।
+
+//textContent দিয়ে element এর সব লেখা পরিবতন করা যায় hidden সহ 
+
+let demo = document.querySelector("#demo").textContent;
+ 
+ console.log(demo);
+
+// innerText দিয়ে hidden text গুলা দেখায় না 
+
+ let demo1 = document.querySelector("#demo").innerText;
+ console.log(demo1);
+ 
+ //Working with Element Attributes using getAttribute() and setAttribute()
+
+ // Attributes হল HTML Tag এর ভিতরে যে যে  এক্সট্রা info thle সেই গুলা attribute বলে 
+ //getAttribute() and setAttribute() কাজ হল সেই attribute গুলা ধরে value poriboton ba add করে 
+
+ // getAttribute() এর কাজ হল যে attribute er value নেওয়ার জন্য 
+
+ let link1 = document.getElementById("link").getAttribute("href");
+ console.log(link1);
+
+ // setAttribute() এর কাজ হল attribute নতুন vaule set বা change করে দেয় 
+ 
+ let img = document.getElementById("img");  
+
+
+  let ChgImag = img.setAttribute("src" ,"https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw=")
