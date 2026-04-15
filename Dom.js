@@ -93,3 +93,38 @@ styleChang.style.color ="red";
 styleChang.style.marginTop = "5px";
 
 }
+// HtML 61 No line Strat
+// element Creating 
+// CreatElement এর কাজ হল আমদের html element Creat kora আমরা js দিয়ে HTMl এর সব elemete Crate করা যায় 
+
+function addHeading(){
+
+
+  // আমরা কোন tag নিব তা দিব HTML er যে কন tag 
+  const heading = document.createElement("H1")
+  // tag a কি কি দিব তা নিলাম যদিও  ইউজার ইনপুট নেওয়া যায় 
+  heading.textContent = "Crating h1 tag in JS";
+
+  // যে খানে stor করব ওইটা তারপর appendChild দিয়ে ওই child হিসেবে headig tag ta দুকাইয় দেই /
+  document.getElementById("contaniter").appendChild(heading);
+}
+
+// এইবের একটা list add করে দেখি and user input 
+
+// onclik function 
+function addItem(){
+  // input 
+  let input = document.getElementById("inputiteam");
+
+  // crate করে নেই কোন tag crate করব 
+  let newItem = document.createElement("li")
+  // ইনপুট এ যেইটা দিব ওইটা element নেই .value দিয়ে শুধু ইনপুট এর value ta নিতেছি
+  newItem.textContent =input.value
+// ul tag এর ভিতর া child kore ইনপুট ভালু টা দিয়ে দেই 
+  document.getElementById("list").appendChild(newItem);
+
+  // এইটা দিছি যাতে করে add করার পর আবার ইনপুট টা ফাকা থাকে 
+  input.value =""
+}
+
+
