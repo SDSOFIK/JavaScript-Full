@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAva Script Full</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- id and Class uesd করা হয় js ba css a ওই নামে ট্যাগ টাকে ধরার জন্য ba acees korar jnno   -->
@@ -12,15 +13,40 @@
 
 <p id="demo"> WellCome to My Page <s style="display: none;">MR. Sofik</s></p>
 
+
+<!--  getAtteubute and setAttribute strat  -->
 <a id="link" href="https://www.google.com/">Click Google</a>
 
 <p>
     <img id="img" src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="" style="width: 400px; height: 400px;">
 </p>
 
+
+<!-- getAtteubute and setAttribute end   -->
+
+
+<!--  password show and hide strat -->
+<input type="password" placeholder="password" id="password">
+<input type="checkbox" onclick="document.getElementById('password').type = this.checked ? 'text' : 'password'">
+
+<!--  password show and hide end -->
+
+
+
+<!--  Adding and Removing Classes with classList strat -->
+  <!-- js code 68 no line css 1 no line strat -->
+
+    <div id="value" class="box">
+        <p>Hello </p>
+    </div>
+<button onclick="togole1()">Click Css Change</button>
+<!--  Adding and Removing Classes with classList end -->
+
 <!-- Java secript Links -->
     <script src="main.js"></script>
     <script src="Dom.js"></script>
+
+  
     
 </body>
 </html>

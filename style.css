@@ -1,0 +1,22 @@
+/* Adding and Removing Classes with classList strat */
+/* HTML 40 no line js 68 no line start */
+.box{
+    width: 500px;
+    height: 500px;
+    border: solid 1px red;
+    color: aquamarine;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+.box2{
+    width: 500px;
+    height: 500px;
+    background: rgb(0, 255, 76);
+    color: black;
+     display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+/* Adding and Removing Classes with classList End */

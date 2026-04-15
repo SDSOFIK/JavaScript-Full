@@ -62,5 +62,23 @@ let demo = document.querySelector("#demo").textContent;
  
  let img = document.getElementById("img");  
 
-
+// আগের ইমেজ টা পরিবতন করে এই ইমেজ টা দেয় 
   let ChgImag = img.setAttribute("src" ,"https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw=")
+
+// Class List 
+// class list এর কাজ হল আমরা যে htmle code করি  class name নামে পরিবতন করা বা যোগ করে ডিলিট করা একসাথে ডিলিট ২ টায়  ও করা মানে আমরা js diye control করতে পারব কোনটা কখন কাজ করবে চল আমরা দেখি কেমন করে কাজ করে 
+
+// HTML 40 no line Css 1 no line Strat
+function togole1(){
+    let box = document.getElementById("value");
+// box1 css শুধু যোগ হবে এই ক্লাস  এ যে যে css code ace shudu add hobe 
+// box.classList.add("box2")
+//শুধু এক বের  ওই ক্লাস এ যে যে আছে সব css delete হয়ে যাবে 
+// box.classList.remove("box")
+
+// toggle এক বার নতুন টা দেই আরেকবার যেইটা আছে ওইটা দেয় ১ click new 2 click a ative ta day 
+    box.classList.toggle("box2")
+
+    // contains এর কাজ হল ক্লাস টা আছে কি না তা দেখা যদি থাকে তাহলে true and flasc return kore 
+    console.log(box.classList.contains("box3"))
+}
