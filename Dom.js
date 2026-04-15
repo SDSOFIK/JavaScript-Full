@@ -82,3 +82,14 @@ function togole1(){
     // contains এর কাজ হল ক্লাস টা আছে কি না তা দেখা যদি থাকে তাহলে true and flasc return kore 
     console.log(box.classList.contains("box3"))
 }
+
+//Changing Styles with style Property
+// আমরা js দিয়ে কিভাবে css style দিতে পারব সেই টায় এই style a dakhbo আমরা চাইলে js দিয়েও ইছা মত style পরিবত করেতে পারি বা দিতে পারি চল দেখি 
+
+function chang(){
+let styleChang = document.getElementById("Style");
+// .style.আমরা যেইটা css করতে চাব সেই তা দিব মনে রাখেতে হবে যে css আমরা যেখানে - usd করি ২ টা জন্য সেই - টা হবে না তার পরিবতে ১টা ঠিক থাকবে পরর ওয়ার্ড বড় হাতের হব যেমন css font-size jss fontSize CSS এর সকল value আমরা uesd করতে পারি 
+styleChang.style.color ="red";
+styleChang.style.marginTop = "5px";
+
+}
