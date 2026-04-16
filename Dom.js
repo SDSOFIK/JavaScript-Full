@@ -120,11 +120,19 @@ function addItem(){
   let newItem = document.createElement("li")
   // ইনপুট এ যেইটা দিব ওইটা element নেই .value দিয়ে শুধু ইনপুট এর value ta নিতেছি
   newItem.textContent =input.value
-// ul tag এর ভিতর া child kore ইনপুট ভালু টা দিয়ে দেই 
+// ul tag এর ভিতর া child kore ইনপুট ভালু টা দিয়ে দেই এইখানে  appendChild ba append je kno akta usd korte pari
   document.getElementById("list").appendChild(newItem);
 
   // এইটা দিছি যাতে করে add করার পর আবার ইনপুট টা ফাকা থাকে 
   input.value =""
+}
+
+// remove elemet এর কাজ হইলো যে কন elemet কে  delete করে দেয়  চল দেখি
+function RemoveElement(){
+let list = document.getElementById("deleteIlement");
+
+list.remove()
+
 }
 
 
