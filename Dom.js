@@ -135,4 +135,35 @@ list.remove()
 
 }
 
+//=========================== Event ===============================
+// ======================= Mouse Event =========================
 
+/* Mouse Event  হল মাউস দিয়ে যে ঘোটনা ঘোটে যেমন হভার পয়েন্টিং করলে color chnage and text changeএইগুলা 
+
+প্রধান মাউস ইভেন্টসমূহ:
+onclick: কোনো এলিমেন্টে ক্লিক করলে 
+ondblclick: কোনো এলিমেন্টে ডাবল-ক্লিক করলে 
+onmousedown: মাউসের বাটন কোনো এলিমেন্টের ওপর চেপে ধরলে 
+onmouseup: মাউসের বাটন কোনো এলিমেন্টের ওপর থেকে ছেড়ে দিলে 
+onmouseover / onmouseenter: মাউসের কার্সার কোনো এলিমেন্টের ওপর আনলে 
+onmouseout / onmouseleave: মাউসের কার্সার কোনো এলিমেন্ট থেকে সরিয়ে নিলে 
+onmousemove: এলিমেন্টের ওপর দিয়ে মাউস নড়াচড়া করলে 
+oncontextmenu: মাউসের ডান বাটন ক্লিক করলে */
+
+// onclick হল একবের ক্লিক করলে যেটা হয় থাকে onclicek bole onclick function দুই ভাবে লিখা যায় html a onclicek() diye and addEventListener js a আমরা ২ টা buttom diye 2 vabe dakhbo 
+
+
+// HTML onclicek Dakbo HtML line no 85
+function AddTex(){
+let text = document.getElementById("boxtext");
+text.innerText = "Hello Onclick Function HTML ";
+}
+
+// এখন দেখব addEventListener clicek function 
+
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", ()=>{
+  let text2 = document.getElementById("boxtext2");
+  text2.innerText = "Click Function without HTML"
+})
