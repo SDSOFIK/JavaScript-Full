@@ -167,3 +167,13 @@ btn.addEventListener("click", ()=>{
   let text2 = document.getElementById("boxtext2");
   text2.innerText = "Click Function without HTML"
 })
+
+//HTML 96 no line 
+// ondblclick same onclick এর মতো শুধু দুই বার ক্লিক করতে হয় সব কিছু একই 
+
+function doubleClick(){
+  let x = document.getElementById("double");
+  x.style.width = " 200px"
+  x.style.height = " 200px"
+  x.style.backgroundColor = "blue"
+}
