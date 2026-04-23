@@ -177,3 +177,51 @@ function doubleClick(){
   x.style.height = " 200px"
   x.style.backgroundColor = "blue"
 }
+
+// onmousedown: কাজ হল যেখেন  মাউস টা right and left button click করবে ঠিক তখন যে কাজ করবে সেইটায় হল onmousemove এর কাজ 
+
+function change(){
+  let t = document.getElementById("chang");
+  t.innerText = "onmousemover working"
+}
+
+// onmouseup আগের টা থেকে ঠিক উল্টা মউস কোন যাইয়গা থেকে click kore  সরাই আনলে কাজ করে 
+function change1(){
+  let t = document.getElementById("chang");
+  t.innerText = "Click onmouseup"
+}
+
+// onmouseover এরকাজ হল জেখন আমরা কন  elemet এর উপরে নিয়ে যায় বা hover kore তখন disegn change কোন কাজ করাই হল 
+let mouse = document.getElementById("onmoseover");
+
+mouse.addEventListener("mouseover", ()=>{
+  mouse.style.color = "red";
+})
+
+// onmouseout এর কাজ হল ঠিক উল্টা যেখন কন elemt থেকে mouse সরাবে তখন এইটা কাজ করবে  
+
+mouse.addEventListener("mouseleave" , ()=> {
+mouse.style.color = "black"
+})
+
+
+
+
+function changeText(){
+  document.getElementById("box").innerText = "Mouse moving...";
+}
+
+let ma = document.getElementById("mouscurs");
+let ma1 = document.getElementById("mouscurs1");
+ma.addEventListener("mousemove", (e)=>{
+  ma1.style.left = e.clientX +"px";
+  ma1.style.top = e.clientY +"px";
+})
+
+ma.addEventListener("mouseleave", () => {
+  ma1.style.display = "none";
+});
+
+ma.addEventListener("mouseenter", () => {
+  ma1.style.display = "block";
+});

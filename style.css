@@ -20,3 +20,18 @@
 }
 
 /* Adding and Removing Classes with classList End */
+
+
+.mouscurs{
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+}
+.mouscurs1{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid blueviolet;
+   pointer-events: none;
+   position: fixed;
+}
