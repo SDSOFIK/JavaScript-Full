@@ -285,5 +285,26 @@ else{
 })
 
 
-// change event এর কাজ হল  যে কন কিছু পরিবতন করা 
+// change event এর কাজ হল  যে কন কিছু পরিবতন করা পরিবতন করে নতুন ভাল বা যে কন দেওয়া যায় 
 
+let select = document.getElementById("color")
+let resultsSelect = document.getElementById("colorResult")
+
+select.addEventListener("change", ()=>{
+  resultsSelect.style.backgroundColor = select.value
+})
+
+// ================== input Event এর কাজ হল আমরা ইনপুট ফিল  এ যা যা লিখব টা সাথে সাথে পাব আমরা 
+
+let ipnutFunction = document.getElementById("ipnutFunction")
+let textViwe = document.getElementById("viwe")
+
+ipnutFunction.addEventListener("input", ()=>{
+  textViwe.innerText = ipnutFunction.value
+})
+
+
+// ========================= windos event ========================== 
+// windos event হল আমরা windo মাধ্মে যে কাজ গুলা করে থাকি মুলত load  resize scroll unload 
+
+// lod পেজ কে পুনুরায় লোড হলে 
