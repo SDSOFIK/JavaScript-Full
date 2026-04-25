@@ -225,3 +225,42 @@ ma.addEventListener("mouseleave", () => {
 ma.addEventListener("mouseenter", () => {
   ma1.style.display = "block";
 });
+
+//======================== keyboard event ===========================
+// keyboard event হলও আমরা কীবোর্ড দিয়ে যে যে কাজ করি তাদিয়ে কন কিছু কে কন্ট্রোল করায় হলিও কীবোর্ড ইভেন্ট এর কাজ । 
+// কীবোর্ড ইভেন্ট এর ৩ টি ১ keydown ২ keyup ৩। keypress
+
+// keydown যেখন কন কী তে চাপ দেওয়া হয় ঠিক তখনেই কাজ সুরু করে দরি আমরা কন একটা ইন কিছু লেখতেছি সাথে নিচে দেখাব মানে কী চাপ দেওয়াএর সাথে সাথে দেখাবে 
+let input = document.getElementById("input");
+let output = document.getElementById("output");
+
+// input.addEventListener("keydown", ()=>{
+
+//   output.innerText = input.value;
+// })
+// keyup এর কাজ হল জেখন কী টা চাপ দিয়ে ছারে দিব ঠিক তখন কাজ করবে  
+input.addEventListener("keyup", ()=>{
+
+  output.innerText = input.value;
+})
+
+// keypres
+
+
+
+// ================= from event ==================================== 
+
+// from event হল আমরা ফ্রম  এ যে কিছু করি submit ba action করে সেইতায়   
+// গুরুপুত হল কিছু ইভেন্ট  submit 2. focus 3. blur 4, change 5. input চল আমরা একটা একটা করে দেখব 
+// subimt event 
+
+let form = document.getElementById("myFrom")
+
+form.addEventListener("submit" , (e)=>{
+
+  // এইটা দেওয়ার কারন হলিও যে পেজ kno reloading ছারাই কাজ করবে বা সেভে হবে 
+  e.preventDefault()
+
+  alert("yes submit ");
+})
+
