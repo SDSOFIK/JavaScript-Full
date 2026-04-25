@@ -252,7 +252,7 @@ input.addEventListener("keyup", ()=>{
 
 // from event হল আমরা ফ্রম  এ যে কিছু করি submit ba action করে সেইতায়   
 // গুরুপুত হল কিছু ইভেন্ট  submit 2. focus 3. blur 4, change 5. input চল আমরা একটা একটা করে দেখব 
-// subimt event 
+// subimt event  কন form বাটন  এ ক্লিক করলে সেই টা দেখায় 
 
 let form = document.getElementById("myFrom")
 
@@ -263,4 +263,27 @@ form.addEventListener("submit" , (e)=>{
 
   alert("yes submit ");
 })
+
+// focus Event এর কাজ হল যেখন কন input fill এ ক্লিক করি ঠিক তখন কাজ করে 
+let inp = document.getElementById("myinput")
+let mes = document.getElementById("mesage1")
+
+inp.addEventListener("focus", ()=>{
+mes.innerText = "hello "
+})
+
+// blur এর কাজ হল যদি আমরা কন না লিখি বা তাহলে ইনপুট ফিল থেকে বের হয়ে আসি তাহলে সেইটা কাজ করবে চল দেখে আগের টায় দেখব যে যদি না লেখি কিছু তাহলে বলবে plase enter you name
+
+
+inp.addEventListener("blur", ()=>{
+if(inp.value.trim()===""){
+  mes.innerText = "hello plases Enter your name "
+}
+else{
+  mes.innerText = ""
+}
+})
+
+
+// change event এর কাজ হল  যে কন কিছু পরিবতন করা 
 
