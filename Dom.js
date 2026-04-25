@@ -308,3 +308,16 @@ ipnutFunction.addEventListener("input", ()=>{
 // windos event হল আমরা windo মাধ্মে যে কাজ গুলা করে থাকি মুলত load  resize scroll unload 
 
 // lod পেজ কে পুনুরায় লোড হলে 
+window.addEventListener("load", ()=>{
+  console.log("page load")
+})
+
+// scroll page scroll kore ai event a add hoy 
+window.addEventListener("scroll", ()=>{
+  console.log("page scroll")
+})
+// page ta koto ber resize hoy 
+window.addEventListener("resize", ()=>{
+  console.log("resize page ")
+})
+
