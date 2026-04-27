@@ -47,5 +47,31 @@ sum1.sum()
 
 
 
-// =========================== encapsulation ============== 
-// encapsulation হল এমন একটা 
+// =========================== Inheritance ============== 
+// Inheritance হল Prant class এর সব কিছু child class এ পাওয়া যায় all property acess kora jay 
+
+class Animal {
+    constructor(name){
+        this.name = name
+    }
+    results(){
+        console.log(`Animal name ${this.name}`)
+    }
+}
+
+class Dog extends Animal{
+constructor(name, sound){
+  
+    // jodi amra kno prant class er property call kori thle amder super (property name) dite hbe 
+    super(name);
+    // যদি সেম ক্লাস এ হয় তাহলে this. diye delecr korte hoy 
+    this.sound = sound;
+}
+speek(){
+    this.results()
+console.log(` animal sound : ${this.sound}`)
+}
+}
+
+let dog1 = new Dog("dog" , "gog gog ")
+dog1.speek()
