@@ -22,5 +22,30 @@ age = 20;
 let a = new addClas()
 // ক্লাস এর মাঝে থেকে আমরা যে propty ta চাই ওইটা নিব 
 console.log(a.name , a.age);
+
+// constructor হল এমন একটা মেথড যা ক্লাস এর object create করার সময় স্বয়ংক্রিয়ভাবে কল হয় এবং আমরা এই মেথড এর মাধ্যমে ক্লাস এর প্রোপার্টি গুলোকে ইনিশিয়ালাইজ করতে পারি। 
+// constructor method টা class এর ভিতরে define করতে হয় এবং এর নাম অবশ্যই constructor হতে হবে। 
+
+class SumClass{
+    // constructor এর যেই গুলা parameters  দিবেও অব্জেট তৈরি করার সময় সেই ভালু গুলা দিতে হবে  
+constructor(a,b){
+    this.a = a;
+    this.b = b;
+} 
+// মেথড এর কাজ হল propaty গুলা নিয়ে কাজ করা কি ক্লাস এর ভিতরে মেথড তৈরি করা যায় অ্যান্ড যে কন অপারেশান চালান যায়  class এর সকল this . diye dorte hoy 
+
+sum(){
+    console.log(this.a+ this.b)
+}
+
+}
+
+let sum1 = new SumClass(1, 4)
+
+sum1.sum()
+
+
+
+
 // =========================== encapsulation ============== 
 // encapsulation হল এমন একটা 
