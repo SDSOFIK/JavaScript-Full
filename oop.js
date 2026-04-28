@@ -48,17 +48,17 @@ sum1.sum()
 
 
 // =========================== Inheritance ============== 
-// Inheritance হল Prant class এর সব কিছু child class এ পাওয়া যায় all property acess kora jay 
+// Inheritance হল Prant class এর সব কিছু child class এ পাওয়া যায় all property acess kora jay  
 
 class Animal {
     constructor(name){
         this.name = name
     }
     results(){
-        console.log(`Animal name ${this.name}`)
+        console.log(`Animal nameঃ ${this.name}`)
     }
 }
-
+// যেই ক্লাস টাঁকে inheritance করব extends diye ক্লাস নাম টা দিবো 
 class Dog extends Animal{
 constructor(name, sound){
   
@@ -75,3 +75,28 @@ console.log(` animal sound : ${this.sound}`)
 
 let dog1 = new Dog("dog" , "gog gog ")
 dog1.speek()
+
+//================================== Encapsulation ===============================
+
+// Encapsulation হল date কে hidden করে রাখে সুধু ওই constructor ছারা অনন কন জায়গায় acces পাওয়া যায় না and ওই constructor er মধে method caret korte hbe 
+
+class BankAccount{
+    constructor(balance ){
+
+        // balance ডাটা টা কে privet করে নেই জাতে অন্য কথাও থেকে access করা না যায় 
+        let _balance = balance;
+    
+
+    this.deposit = function(amount ){
+        _balance += amount;
+    }
+    this.GetBalance = function(){
+        return _balance
+    }
+}
+}
+// আমরা সরাসরি balance ke acces করতে পারব না 
+let accound = new BankAccount(200)
+accound.deposit(700);
+
+console.log(accound.GetBalance())
