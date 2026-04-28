@@ -100,3 +100,34 @@ let accound = new BankAccount(200)
 accound.deposit(700);
 
 console.log(accound.GetBalance())
+
+
+// =============================== Polymorphism ================================== 
+// Polymorphism হল এমন একটা মেথড যে নাম একই থাকে কিন্তু আলাদা আলদা জায়গায় আলাদা আলদা আউটপুট দেয় 
+
+class Car{
+    constructor(name, model){
+        this.name = name
+         this.model = model
+    }
+    CarInfo(){
+        console.log(` name: ${this.name}  Model: ${this.model}`)
+    }
+}
+
+class BMW extends Car{
+    constructor(name , model){
+        super(name, model)
+
+    }
+     CarInfo(){
+        console.log(` name: ${this.name}  Model: ${this.model}`)
+    }
+}
+
+let car = new Car("TOYOTA", "LC655")
+let bmw = new BMW("BMW", "HL55")
+
+// same method name but work define this polymorphism
+car.CarInfo()
+bmw.CarInfo()
