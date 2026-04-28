@@ -131,3 +131,19 @@ let bmw = new BMW("BMW", "HL55")
 // same method name but work define this polymorphism
 car.CarInfo()
 bmw.CarInfo()
+
+//============================= Abstraction ============================================
+// Abstraction হল complexity লুকান মনে করি আমরা একটা কাজ করব একটা ইউজার দেখতে পাবে অপর টা দেখতে পারবে না  
+
+class vissProser{
+    // jei method ta amra hedding rakhbi seita aivabe dibo 
+    strat(){
+        this.proses();
+        console.log("all worik heidden")
+    }
+    proses(){
+        console.log(" viss porosing .....")
+    }
+}
+let visa = new vissProser()
+visa.proses();
